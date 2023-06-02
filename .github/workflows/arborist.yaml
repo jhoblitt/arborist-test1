@@ -1,0 +1,19 @@
+---
+name: Arborist
+
+"on":
+  - create
+  - delete
+  - pull_request
+  - push
+
+jobs:
+  arborist:
+    name: Prune dead branches
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: run arborist
+        uses: jhoblitt/arborist-action@main
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
