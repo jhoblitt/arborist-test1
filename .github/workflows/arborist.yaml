@@ -8,7 +8,7 @@ name: Arborist
   - push
 
 permissions:
-  content: write
+  contents: write
 
 jobs:
   arborist:
