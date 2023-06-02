@@ -1,0 +1,8 @@
+---
+repos:
+  - repo: jhoblitt/arborist-test1
+  - repo: jhoblitt/arborist-test2
+    noop: true
+exclude_patterns:
+  - main
+noop: true
